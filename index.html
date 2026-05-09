@@ -3,188 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saúde Mental & Fé | Cartilha FABAT</title>
+    <title>Saúde Mental & Fé | Cartilha Digital</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        details[open] summary ~ * { animation: sweep .3s ease-in-out; }
-        @keyframes sweep { 0% { opacity: 0; margin-top: -10px; } 100% { opacity: 1; margin-top: 0; } }
+        /* Suavização da abertura dos acordeões */
+        details[open] summary ~ * { animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+        .bible-quote { font-family: 'Georgia', serif; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans leading-normal">
+<body class="bg-slate-50 text-slate-900 antialiased leading-tight">
 
-    <header class="bg-[#1e40af] text-white py-6 px-4 text-center shadow-md">
-        <h1 class="text-xl md:text-2xl font-extrabold tracking-tight uppercase">Saúde Mental & Fé</h1>
-        <p class="text-[10px] md:text-xs font-light opacity-80 uppercase tracking-[0.2em] mt-1">Cartilha Digital para Comunidades Cristãs</p>
+    <header class="bg-[#1e40af] text-white py-8 px-4 text-center shadow-lg">
+        <div class="mb-2">
+            <i class="fa-solid fa-heart-pulse text-3xl opacity-90"></i>
+        </div>
+        <h1 class="text-2xl md:text-3xl font-extrabold tracking-tighter uppercase">Saúde Mental & Fé</h1>
+        <p class="text-sm font-light opacity-80 mt-1 uppercase tracking-widest">Cartilha Digital para Comunidades Cristãs</p>
     </header>
 
     <main class="max-w-3xl mx-auto px-4 py-6">
         
         <section class="mb-8">
-            <h2 class="text-center text-[11px] font-bold text-[#1e40af] uppercase mb-3 tracking-widest italic">Por que a Igreja precisa falar disso?</h2>
+            <h2 class="text-center text-[10px] font-bold text-[#1e40af] uppercase mb-4 tracking-[0.2em] italic">Por que a Igreja precisa falar disso?</h2>
             <div class="grid grid-cols-3 gap-2">
-                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-center">
-                    <p class="text-2xl font-black text-blue-600 leading-none">11 mi</p>
-                    <p class="text-[10px] text-gray-500 mt-2 leading-tight font-bold uppercase">Depressão no BR¹</p>
+                <div class="bg-white p-3 rounded-2xl shadow-sm border border-gray-100 text-center flex flex-col justify-center">
+                    <p class="text-xl md:text-3xl font-black text-blue-600 leading-none">11 mi</p>
+                    <p class="text-[9px] md:text-[10px] text-gray-500 mt-2 font-bold uppercase leading-tight">Brasileiros com depressão¹</p>
                 </div>
-                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-center">
-                    <p class="text-2xl font-black text-blue-600 leading-none">70%</p>
-                    <p class="text-[10px] text-gray-500 mt-2 leading-tight font-bold uppercase">Pastores exaustos²</p>
+                <div class="bg-white p-3 rounded-2xl shadow-sm border border-gray-100 text-center flex flex-col justify-center">
+                    <p class="text-xl md:text-3xl font-black text-blue-600 leading-none">70%</p>
+                    <p class="text-[9px] md:text-[10px] text-gray-500 mt-2 font-bold uppercase leading-tight">Pastores em exaustão²</p>
                 </div>
-                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-center">
-                    <p class="text-2xl font-black text-blue-600 leading-none">80%</p>
-                    <p class="text-[10px] text-gray-500 mt-2 leading-tight font-bold uppercase">Impacto familiar³</p>
+                <div class="bg-white p-3 rounded-2xl shadow-sm border border-gray-100 text-center flex flex-col justify-center">
+                    <p class="text-xl md:text-3xl font-black text-blue-600 leading-none">80%</p>
+                    <p class="text-[9px] md:text-[10px] text-gray-500 mt-2 font-bold uppercase leading-tight">Impacto na família³</p>
                 </div>
             </div>
-            <p class="text-[9px] text-gray-400 mt-2 text-center italic tracking-tight">
-                Ref: (1) OMS | (2) Vigitel/MS | (3) Pesquisa Barna/Visão Mundial
+            <p class="text-[8px] text-gray-400 mt-2 text-center italic">Ref: (1) OMS 2019 | (2) Vigitel/MS 2021 | (3) Barna/Visão Mundial</p>
+        </section>
+
+        <section class="mb-10 bg-blue-50 p-6 rounded-[2rem] border border-blue-100 shadow-sm">
+            <h2 class="text-[#1e40af] font-black text-sm uppercase mb-3 flex items-center">
+                <i class="fa-solid fa-hand-holding-heart mr-2"></i> O Estigma: A barreira invisível
+            </h2>
+            <p class="text-sm text-blue-800 leading-relaxed italic">
+                "Muitas pessoas sofrem em silêncio dentro das igrejas por medo de julgamento, culpa ou incompreensão espiritual. Frases como <strong>‘falta fé’</strong> ou <strong>‘basta orar mais’</strong> podem intensificar o sofrimento e afastar pessoas do cuidado adequado. A igreja pode ser um espaço de acolhimento, escuta, apoio emocional e esperança cristã."
             </p>
         </section>
 
-        <section class="mb-8 bg-blue-50 p-5 rounded-3xl border border-blue-100">
-            <h2 class="text-md font-bold text-blue-900 mb-3 flex items-center">
-                <i class="fa-solid fa-eye-slash mr-2"></i> O Estigma: a barreira invisível
-            </h2>
-            <div class="space-y-3 text-sm text-blue-800 leading-relaxed">
-                <p>Muitas pessoas sofrem em silêncio dentro das igrejas por medo de julgamento, culpa ou incompreensão espiritual.</p>
-                <p>Frases como <strong>“falta fé”</strong> ou <strong>“basta orar mais”</strong> podem intensificar o sofrimento e afastar pessoas do cuidado adequado.</p>
-                <p class="font-semibold">A igreja pode ser um espaço de acolhimento, escuta, apoio emocional e esperança cristã.</p>
-            </div>
-        </section>
-
-        <div class="space-y-6">
+        <div class="space-y-8">
             
-            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
-                <div class="bg-blue-600 p-4 text-white flex items-center justify-between">
-                    <h3 class="font-bold uppercase tracking-wider text-sm">Depressão</h3>
-                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <article class="bg-white rounded-[2.5rem] shadow-md border border-gray-100 overflow-hidden">
+                <div class="bg-[#1e40af] p-5 text-white flex items-center justify-between">
+                    <h3 class="font-black uppercase tracking-tight text-lg">Depressão</h3>
+                    <i class="fa-solid fa-cloud-showers-heavy text-2xl"></i>
                 </div>
                 <div class="p-6">
-                    <p class="text-sm font-bold text-blue-800 mb-1 italic">O que é:</p>
-                    <p class="text-sm text-gray-700 mb-4 leading-relaxed">Síndrome psiquiátrica que compromete a autovalorização e a vontade, indo além da tristeza normal.</p>
-                    <p class="text-[11px] font-bold text-gray-400 uppercase mb-1 tracking-widest">Sintomas Comuns:</p>
-                    <p class="text-sm text-gray-700 mb-6">Tristeza persistente, apatia, anedonia e fadiga.</p>
-                    <details class="group border-t pt-4">
-                        <summary class="flex items-center justify-between cursor-pointer font-bold text-blue-600 text-xs uppercase tracking-widest">
-                            Fundamentação Bíblica e Cuidado
-                            <i class="fa-solid fa-chevron-down group-open:rotate-180 transition-transform"></i>
+                    <div class="mb-4">
+                        <h4 class="text-xs font-bold text-blue-800 uppercase tracking-widest mb-1 italic">O que é:</h4>
+                        <p class="text-sm text-gray-700 leading-snug">Síndrome psiquiátrica que compromete a autovalorização, a vontade e a psicomotricidade, sendo desproporcionalmente mais intensa que a tristeza comum.</p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Sintomas Comuns:</h4>
+                        <p class="text-sm text-gray-700 leading-snug">Tristeza persistente, apatia, tédio crônico, irritabilidade, anedonia, insônia/hipersonia, fadiga e ideação suicida.</p>
+                    </div>
+                    
+                    <details class="group border-t border-gray-100 py-3">
+                        <summary class="flex justify-between items-center cursor-pointer font-bold text-xs uppercase text-slate-500 hover:text-blue-600 transition-colors">
+                            O que os dados dizem <i class="fa-solid fa-chart-line opacity-50 group-open:rotate-180 transition-transform"></i>
                         </summary>
-                        <div class="mt-4 space-y-4">
-                            <blockquote class="bg-blue-50 p-4 rounded-xl border-l-4 border-blue-600 text-sm font-serif italic">
-                                "Por que está tão triste, ó minha alma? (...) Ponha a sua esperança em Deus." (Sl 42:5-7)
-                            </blockquote>
-                            <p class="text-xs text-gray-600">Estes textos retratam um abatimento profundo, oferecendo esperança e consolo através do aspecto espiritual.</p>
+                        <div class="mt-3 text-[13px] text-gray-600 space-y-2 leading-relaxed bg-slate-50 p-4 rounded-xl">
+                            <p>• 29,2% de pacientes internados no HC-UNICAMP apresentavam depressão maior.</p>
+                            <p>• 22,3% dos missionários evangélicos brasileiros apresentam sintomas (USP, 2019).</p>
+                            <p>• Mais da metade dos líderes religiosos sofrem com depressão (World Vision/Barna Group).</p>
                         </div>
                     </details>
-                </div>
-            </div>
 
-            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
-                <div class="bg-emerald-600 p-4 text-white flex items-center justify-between">
-                    <h3 class="font-bold uppercase tracking-wider text-sm">Ansiedade</h3>
-                    <i class="fa-solid fa-wind"></i>
-                </div>
-                <div class="p-6">
-                    <p class="text-sm font-bold text-emerald-800 mb-1 italic">O que é:</p>
-                    <p class="text-sm text-gray-700 mb-4 leading-relaxed">Estado de exaltação afetiva ou crises agudas de medo e apreensão constante.</p>
-                    <p class="text-[11px] font-bold text-gray-400 uppercase mb-1 tracking-widest">Sintomas Comuns:</p>
-                    <p class="text-sm text-gray-700 mb-6">Inquietação mental, medo do futuro e tensão física.</p>
-                    <details class="group border-t pt-4">
-                        <summary class="flex items-center justify-between cursor-pointer font-bold text-emerald-600 text-xs uppercase tracking-widest">
-                            Fundamentação Bíblica e Cuidado
-                            <i class="fa-solid fa-chevron-down group-open:rotate-180 transition-transform"></i>
+                    <details class="group border-t border-gray-100 py-3">
+                        <summary class="flex justify-between items-center cursor-pointer font-bold text-xs uppercase text-blue-700">
+                            Fundamentação Bíblica para o Cuidado <i class="fa-solid fa-book-open group-open:rotate-180 transition-transform"></i>
                         </summary>
                         <div class="mt-4 space-y-4">
-                            <blockquote class="bg-emerald-50 p-4 rounded-xl border-l-4 border-emerald-600 text-sm font-serif italic">
-                                "Não andem ansiosos por coisa alguma; em tudo orem a Deus." (Fp 4:6-7)
+                            <blockquote class="bible-quote bg-blue-50 p-4 rounded-2xl border-l-4 border-blue-600 text-[13.5px] italic text-blue-900">
+                                “Por que está tão triste, ó minha alma? (...) Ponha a sua esperança em Deus, pois eu ainda o louvarei. Ele é o meu Salvador e o meu Deus! (...) Um abismo chama outro abismo ao rugir das tuas cachoeiras; todas as tuas ondas e vagalhões se abateram sobre mim.” (Salmos 42:5-7,11) <br><br>
+                                “Quando as minhas inquietações aumentavam no meu íntimo, o teu consolo trouxe alívio à minha alma.” (Salmos 94:19)
                             </blockquote>
-                            <p class="text-xs text-gray-600">As Escrituras encorajam a confiar no cuidado de Deus, prometendo a paz que excede o entendimento.</p>
+                            <div class="text-xs text-slate-600 leading-relaxed">
+                                <span class="font-bold uppercase block mb-1">Aplicação:</span>
+                                Retratam um abatimento e uma tristeza profunda de alma como se a pessoa estivesse num abismo. Oferecem uma solução no aspecto espiritual: Por a esperança em Deus e louvá-lo.
+                            </div>
                         </div>
                     </details>
                 </div>
-            </div>
+            </article>
 
-            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
-                <div class="bg-orange-600 p-4 text-white flex items-center justify-between">
-                    <h3 class="font-bold uppercase tracking-wider text-sm">Burnout</h3>
-                    <i class="fa-solid fa-fire"></i>
+            <article class="bg-white rounded-[2.5rem] shadow-md border border-gray-100 overflow-hidden">
+                <div class="bg-emerald-600 p-5 text-white flex items-center justify-between">
+                    <h3 class="font-black uppercase tracking-tight text-lg">Ansiedade</h3>
+                    <i class="fa-solid fa-wind text-2xl"></i>
                 </div>
                 <div class="p-6">
-                    <p class="text-sm font-bold text-orange-800 mb-1 italic">O que é:</p>
-                    <p class="text-sm text-gray-700 mb-4 leading-relaxed">Esgotamento crônico resultante de pressões intensas no ministério ou no ambiente de trabalho.</p>
-                    <p class="text-[11px] font-bold text-gray-400 uppercase mb-1 tracking-widest">Sintomas Comuns:</p>
-                    <p class="text-sm text-gray-700 mb-6">Exaustão extrema, cinismo e sensação de ineficácia.</p>
-                    <details class="group border-t pt-4">
-                        <summary class="flex items-center justify-between cursor-pointer font-bold text-orange-600 text-xs uppercase tracking-widest">
-                            Fundamentação Bíblica e Cuidado
-                            <i class="fa-solid fa-chevron-down group-open:rotate-180 transition-transform"></i>
+                    <div class="mb-4">
+                        <h4 class="text-xs font-bold text-emerald-800 uppercase tracking-widest mb-1 italic">O que é:</h4>
+                        <p class="text-sm text-gray-700 leading-snug">Estado patológico de exaltação afetiva manifestado de forma generalizada ou crises abruptas e intensas (ataques de pânico).</p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Sintomas Comuns:</h4>
+                        <p class="text-sm text-gray-700 leading-snug">Inquietação mental, dificuldade de concentração, tensão muscular, sudorese fria, perturbações do sono e taquicardia.</p>
+                    </div>
+                    
+                    <details class="group border-t border-gray-100 py-3">
+                        <summary class="flex justify-between items-center cursor-pointer font-bold text-xs uppercase text-slate-500 hover:text-emerald-600 transition-colors">
+                            O que os dados dizem <i class="fa-solid fa-chart-line opacity-50 group-open:rotate-180 transition-transform"></i>
                         </summary>
-                        <div class="mt-4 space-y-4">
-                            <blockquote class="bg-orange-50 p-4 rounded-xl border-l-4 border-orange-600 text-sm font-serif italic">
-                                "Venham a mim todos os que estão cansados e sobrecarregados." (Mt 11:28-30)
-                            </blockquote>
-                            <p class="text-xs text-gray-600">Estes textos reforçam a restauração das forças e o refrigério oferecido pelo Senhor aos que estão em seu limite.</p>
+                        <div class="mt-3 text-[13px] text-gray-600 space-y-2 leading-relaxed bg-slate-50 p-4 rounded-xl">
+                            <p>• 15% dos pacientes internados com TAG e 23,7% com agorafobia (UNICAMP).</p>
+                            <p>• Transtorno mais frequente em missionários (35,5%) no estudo Morilha (2019).</p>
                         </div>
                     </details>
-                </div>
-            </div>
 
-            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
-                <div class="bg-rose-700 p-4 text-white flex items-center justify-between">
-                    <h3 class="font-bold uppercase tracking-wider text-sm">Risco de Suicídio</h3>
-                    <i class="fa-solid fa-heart-pulse"></i>
-                </div>
-                <div class="p-6">
-                    <p class="text-sm font-bold text-rose-800 mb-1 italic">O que é:</p>
-                    <p class="text-sm text-gray-700 mb-4 leading-relaxed">Urgência clínica ligada à desesperança profunda e desejo de interromper um sofrimento extremo.</p>
-                    <p class="text-[11px] font-bold text-gray-400 uppercase mb-1 tracking-widest">Sinais de Alerta:</p>
-                    <p class="text-sm text-gray-700 mb-6">Desejo de morrer, isolamento severo e perda total de sentido.</p>
-                    <details class="group border-t pt-4">
-                        <summary class="flex items-center justify-between cursor-pointer font-bold text-rose-700 text-xs uppercase tracking-widest">
-                            Fundamentação Bíblica e Cuidado
-                            <i class="fa-solid fa-chevron-down group-open:rotate-180 transition-transform"></i>
+                    <details class="group border-t border-gray-100 py-3">
+                        <summary class="flex justify-between items-center cursor-pointer font-bold text-xs uppercase text-emerald-700">
+                            Fundamentação Bíblica para o Cuidado <i class="fa-solid fa-book-open group-open:rotate-180 transition-transform"></i>
                         </summary>
                         <div class="mt-4 space-y-4">
-                            <blockquote class="bg-rose-50 p-4 rounded-xl border-l-4 border-rose-600 text-sm font-serif italic">
-                                "Elias teve medo e fugiu... sentou-se e pediu para morrer." (1 Reis 19:4)
+                            <blockquote class="bible-quote bg-emerald-50 p-4 rounded-2xl border-l-4 border-emerald-600 text-[13.5px] italic text-emerald-900">
+                                “Escuta a minha oração, ó Deus... o meu coração está acelerado; os pavores da morte me assaltam. Entregue as suas preocupações ao Senhor.” (Salmos 55:1-5,22) <br><br>
+                                “Não andem ansiosos por coisa alguma... lancem sobre ele toda a sua ansiedade.” (Fp 4:6 | 1Pe 5:7) <br><br>
+                                “Deixo com vocês a paz; a minha paz dou a vocês.” (João 14:27)
                             </blockquote>
-                            <p class="text-xs text-gray-600">Mostra que até grandes líderes bíblicos enfrentaram desejos de morte, e Deus respondeu com cuidado prático e acolhimento.</p>
+                            <div class="text-xs text-slate-600 leading-relaxed">
+                                <span class="font-bold uppercase block mb-1">Aplicação:</span>
+                                Retratam um coração preocupado com as dificuldades da vida, mas convidam a depositar sobre o Senhor os anseios, pois Ele cuida de nós.
+                            </div>
                         </div>
                     </details>
                 </div>
-            </div>
+            </article>
 
-            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
-                <div class="bg-slate-700 p-4 text-white flex items-center justify-between">
-                    <h3 class="font-bold uppercase tracking-wider text-sm">Transtornos Comuns (TMC)</h3>
-                    <i class="fa-solid fa-circle-exclamation"></i>
+            <article class="bg-white rounded-[2.5rem] shadow-md border border-gray-100 overflow-hidden">
+                <div class="bg-orange-600 p-5 text-white flex items-center justify-between">
+                    <h3 class="font-black uppercase tracking-tight text-lg text-orange-50">Burnout</h3>
+                    <i class="fa-solid fa-fire text-2xl"></i>
                 </div>
                 <div class="p-6">
-                    <p class="text-sm font-bold text-slate-800 mb-1 italic">O que é:</p>
-                    <p class="text-sm text-gray-700 mb-4 leading-relaxed">Sintomas inespecíficos que causam forte impacto funcional, muitas vezes precedendo quadros graves.</p>
-                    <p class="text-[11px] font-bold text-gray-400 uppercase mb-1 tracking-widest">Sintomas:</p>
-                    <p class="text-sm text-gray-700 mb-6">Insônia, fadiga constante, ansiedade leve e desânimo.</p>
-                    <details class="group border-t pt-4">
-                        <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-700 text-xs uppercase tracking-widest">
-                            Fundamentação Bíblica e Cuidado
-                            <i class="fa-solid fa-chevron-down group-open:rotate-180 transition-transform"></i>
+                    <div class="mb-4">
+                        <h4 class="text-xs font-bold text-orange-800 uppercase tracking-widest mb-1 italic">O que é:</h4>
+                        <p class="text-sm text-gray-700 leading-snug">Condição resultante de pressões excessivas no ambiente de trabalho/ministério de forma crônica.</p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Sintomas Comuns:</h4>
+                        <p class="text-sm text-gray-700 leading-snug">Grande abatimento, desalento extremo diante da rotina e forte cinismo/indiferença severa.</p>
+                    </div>
+
+                    <details class="group border-t border-gray-100 py-3">
+                        <summary class="flex justify-between items-center cursor-pointer font-bold text-xs uppercase text-slate-500 hover:text-orange-600 transition-colors">
+                            O que os dados dizem <i class="fa-solid fa-chart-line opacity-50 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-[13px] text-gray-600 space-y-2 leading-relaxed bg-slate-50 p-4 rounded-xl">
+                            <p>• 16,5% dos missionários com Burnout e 28,7% com perfil "ineficaz" (USP, 2019).</p>
+                            <p>• Mais de 50% dos líderes religiosos reportam esgotamento emocional.</p>
+                            <p>• 70% dos pastores lutam contra a depressão por esgotamento do ministério.</p>
+                        </div>
+                    </details>
+
+                    <details class="group border-t border-gray-100 py-3">
+                        <summary class="flex justify-between items-center cursor-pointer font-bold text-xs uppercase text-orange-700">
+                            Fundamentação Bíblica para o Cuidado <i class="fa-solid fa-book-open group-open:rotate-180 transition-transform"></i>
                         </summary>
                         <div class="mt-4 space-y-4">
-                            <blockquote class="bg-slate-50 p-4 rounded-xl border-l-4 border-slate-600 text-sm font-serif italic">
-                                "O teu consolo trouxe alívio à minha alma angustiada." (Sl 94:19)
+                            <blockquote class="bible-quote bg-orange-50 p-4 rounded-2xl border-l-4 border-orange-600 text-[13.5px] italic text-orange-900">
+                                “Restaurarei o exausto e saciarei o enfraquecido.” (Jeremias 31:25) <br><br>
+                                “Ele fortalece o cansado e dá grande vigor ao que está sem forças... aqueles que esperam no Senhor renovam as suas forças.” (Isaías 40:28-31) <br><br>
+                                “Venham a mim todos os que estão cansados... eu darei descanso a vocês.” (Mateus 11:28-30)
                             </blockquote>
-                            <p class="text-xs text-gray-600">Trabalha o alívio imediato das inquietações da alma através da presença consoladora do Espírito Santo.</p>
+                            <div class="text-xs text-slate-600 leading-relaxed">
+                                <span class="font-bold uppercase block mb-1">Aplicação:</span>
+                                Retratam um contexto de exaustão e reforçam a ajuda do Senhor restaurando as forças e trazendo refrigério e suporte.
+                            </div>
                         </div>
                     </details>
                 </div>
-            </div>
+            </article>
+
+            <article class="bg-white rounded-[2.5rem] shadow-md border border-gray-100 overflow-hidden">
+                <div class="bg-rose-700 p-5 text-white flex items-center justify-between">
+                    <h3 class="font-black uppercase tracking-tight text-lg">Risco de Suicídio</h3>
+                    <i class="fa-solid fa-heart-pulse text-2xl"></i>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <h4 class="text-xs font-bold text-rose-800 uppercase tracking-widest mb-1 italic">O que é:</h4>
+                        <p class="text-sm text-gray-700 leading-snug">Presença latente ou explícita de ideação ou planos autodestrutivos engatilhados por sofrimento agudo.</p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-xs font-bold text-rose-600 uppercase tracking-widest mb-1">Sinais de Alerta:</h4>
+                        <p class="text-sm text-gray-700 leading-snug font-medium italic">Desesperança, crença de "fracasso existencial", melhora súbita (mascaramento), isolamento e uso de álcool.</p>
+                    </div>
+
+                    <details class="group border-t border-gray-100 py-3">
+                        <summary class="flex justify-between items-center cursor-pointer font-bold text-xs uppercase text-slate-500 hover:text-rose-600 transition-colors">
+                            O que os dados dizem <i class="fa-solid fa-chart-line opacity-50 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-[13px] text-gray-600 space-y-2 leading-relaxed bg-slate-50 p-4 rounded-xl">
+                            <p>• Identificado em 22,9% dos pacientes internados (UNICAMP).</p>
+                            <p>• Responsável por mais de 1 em cada 100 mortes no mundo (OMS).</p>
+                        </div>
+                    </details>
+
+                    <details class="group border-t border-gray-100 py-3">
+                        <summary class="flex justify-between items-center cursor-pointer font-bold text-xs uppercase text-rose-700">
+                            Fundamentação Bíblica para o Cuidado <i class="fa-solid fa-book-open group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-4 space-y-4">
+                            <blockquote class="bible-quote bg-rose-50 p-4 rounded-2xl border-l-4 border-rose-600 text-[13.5px] italic text-rose-900">
+                                1 Reis 19:4 – Elias pede a morte. <br>
+                                Jonas 4:3 – “Melhor me é morrer”. <br>
+                                Jó 3 – Amaldiçoa o dia de seu nascimento.
+                            </blockquote>
+                            <div class="text-xs text-slate-600 leading-relaxed">
+                                <span class="font-bold uppercase block mb-1">Aplicação:</span>
+                                Demonstra que líderes bíblicos enfrentaram desejos de morte e Deus respondeu com cuidado prático e uma nova perspectiva.
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-[2.5rem] shadow-md border border-gray-100 overflow-hidden">
+                <div class="bg-slate-700 p-5 text-white flex items-center justify-between">
+                    <h3 class="font-black uppercase tracking-tight text-lg">TMC (Transtornos Comuns)</h3>
+                    <i class="fa-solid fa-circle-exclamation text-2xl"></i>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <h4 class="text-xs font-bold text-slate-800 uppercase tracking-widest mb-1 italic">O que é:</h4>
+                        <p class="text-sm text-gray-700 leading-snug">Categoria para sofrimento psicopatológico inespecífico que causa claro impacto funcional diário.</p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Sintomas:</h4>
+                        <p class="text-sm text-gray-700 leading-snug">Insônia constante, fadiga inespecífica, ansiedade leve, desânimo e fobias simples.</p>
+                    </div>
+
+                    <details class="group border-t border-gray-100 py-3">
+                        <summary class="flex justify-between items-center cursor-pointer font-bold text-xs uppercase text-slate-500 hover:text-slate-900 transition-colors">
+                            O que os dados dizem <i class="fa-solid fa-chart-line opacity-50 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-[13px] text-gray-600 space-y-2 leading-relaxed bg-slate-50 p-4 rounded-xl">
+                            <p>• 29,4% dos missionários apresentam sintomas de TMC (1 em cada 3).</p>
+                            <p>• Mulheres têm 6,7x mais chance de desenvolver TMC nesse contexto ministerial.</p>
+                        </div>
+                    </details>
+
+                    <details class="group border-t border-gray-100 py-3">
+                        <summary class="flex justify-between items-center cursor-pointer font-bold text-xs uppercase text-slate-800">
+                            Fundamentação Bíblica para o Cuidado <i class="fa-solid fa-book-open group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-4 space-y-4">
+                            <blockquote class="bible-quote bg-slate-50 p-4 rounded-2xl border-l-4 border-slate-600 text-[13.5px] italic text-slate-900">
+                                “O teu consolo trouxe alívio à minha alma angustiada.” (Sl 94:19) <br><br>
+                                *Aplica-se também os textos de Ansiedade e Burnout.
+                            </blockquote>
+                            <div class="text-xs text-slate-600 leading-relaxed">
+                                <span class="font-bold uppercase block mb-1">Aplicação:</span>
+                                Mesmo antes de quadros graves, podemos encontrar em Deus o sustento e o cuidado preventivo.
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </article>
 
         </div>
 
-        <section class="mt-12 text-center">
-            <a href="#" class="inline-block bg-[#1e40af] text-white px-10 py-4 rounded-full font-bold text-sm shadow-xl uppercase tracking-widest transition-transform hover:scale-105">
-                Dar Feedback ao Grupo <i class="fa-solid fa-comment-dots ml-2"></i>
+        <section class="mt-12 text-center mb-8">
+            <a href="#" class="inline-block bg-[#1e40af] text-white px-10 py-4 rounded-full shadow-xl hover:scale-105 transition-transform">
+                <span class="block text-sm font-black uppercase tracking-widest">Ajudou sua comunidade?</span>
+                <span class="block text-[10px] opacity-80 uppercase font-bold tracking-tight">Dê seu Feedback <i class="fa-solid fa-comment-dots ml-1"></i></span>
             </a>
+        </section>
+
+        <section class="mb-12">
+            <details class="group">
+                <summary class="text-center text-[10px] font-bold text-gray-400 uppercase tracking-widest cursor-pointer list-none hover:text-gray-600 transition-colors">
+                    Referências Bibliográficas <i class="fa-solid fa-chevron-down ml-1 group-open:rotate-180 transition-transform"></i>
+                </summary>
+                <div class="mt-4 p-5 bg-white rounded-3xl border border-gray-100 text-[10px] text-gray-500 leading-relaxed space-y-2">
+                    <p>CHENIAUX, Elie. <strong>Manual de psicopatologia</strong>. 6. ed. Rio de Janeiro: Guanabara Koogan, 2020.</p>
+                    <p>CONVENÇÃO BATISTA BRASILEIRA. <strong>Pastor Batista desperta consciências sobre saúde mental</strong>. Acesso em: 15 abr. 2026.</p>
+                    <p>DALGALARRONDO, Paulo. <strong>Psicopatologia e semiologia dos transtornos mentais</strong>. 3. ed. Porto Alegre: Artmed, 2019.</p>
+                    <p>MORILHA, Abner. <strong>Prevalência de sintomas de transtornos psiquiátricos em missionários</strong>. Tese (Doutorado) – USP, 2019.</p>
+                    <p>SEPAL. <strong>O que a igreja precisa saber sobre saúde mental</strong>. Acesso em: 15 abr. 2026.</p>
+                    <p>SOEIRO, Rachel Esteves et al. <strong>Religião e transtornos mentais em hospital geral</strong>. Cadernos de Saúde Pública, 2008.</p>
+                    <p>VISÃO MUNDIAL. <strong>Pesquisa: líderes religiosos e depressão</strong>. Acesso em: 15 abr. 2026.</p>
+                </div>
+            </details>
         </section>
 
     </main>
@@ -192,21 +306,23 @@
     <footer class="bg-slate-900 text-white py-12 px-6 text-center">
         <div class="max-w-xl mx-auto space-y-6">
             <div class="space-y-1">
-                <p class="text-[11px] font-bold uppercase tracking-[0.3em] text-blue-400">Faculdade Batista do Rio de Janeiro - FABAT</p>
-                <p class="text-lg font-extrabold uppercase tracking-tight">Seminário do Sul</p>
+                <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-blue-400">Faculdade Batista do Rio de Janeiro - FABAT</p>
+                <p class="text-lg font-black uppercase">Seminário do Sul</p>
             </div>
             
             <div class="pt-6 border-t border-slate-800">
-                <p class="text-[10px] text-slate-400 uppercase tracking-[0.2em] mb-4 font-bold">Teologia | 5º Período | 2026-1</p>
-                <div class="grid grid-cols-2 gap-y-2 gap-x-4 text-[11px] text-slate-300 font-medium italic text-left md:text-center">
-                    <span>Gabriel Mulins</span>
-                    <span>Guilherme de Souza</span>
-                    <span>Lucas Araujo</span>
-                    <span>Luiz Gustavo</span>
-                    <span>Michel Carneiro</span>
-                    <span>Nathália Gouveia</span>
-                    <span>Rodrigo Porto</span>
-                    <span>Thiago Andrade</span>
+                <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-1 font-bold">Teologia | 5º Período | 2026-1</p>
+                <p class="text-[11px] text-blue-300 uppercase tracking-widest font-bold mb-4">Projeto Extensionista I - Grupo:</p>
+                
+                <div class="grid grid-cols-2 gap-y-2 gap-x-8 text-[11px] text-slate-400 font-medium italic">
+                    <span class="text-right">Gabriel Mulins</span>
+                    <span class="text-left">Guilherme de Souza</span>
+                    <span class="text-right">Lucas Araujo</span>
+                    <span class="text-left">Luiz Gustavo</span>
+                    <span class="text-right">Michel Carneiro</span>
+                    <span class="text-left">Nathália Gouveia</span>
+                    <span class="text-right">Rodrigo Porto</span>
+                    <span class="text-left">Thiago Andrade</span>
                 </div>
             </div>
         </div>
